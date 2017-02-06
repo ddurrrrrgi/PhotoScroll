@@ -15,6 +15,7 @@ class PhotoCommentViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     
     var photoName: String!
+    var photoIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,6 @@ class PhotoCommentViewController: UIViewController {
             selector: #selector(keyboardWillHide(_:)),
             name: NSNotification.Name.UIKeyboardWillHide,
             object: nil)
-        
     }
     
     deinit {

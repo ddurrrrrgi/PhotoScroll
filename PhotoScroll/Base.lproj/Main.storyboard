@@ -44,7 +44,7 @@
                                 <size key="customSize" width="200" height="200"/>
                                 <connections>
                                     <outlet property="imageView" destination="1Xv-RL-hti" id="2ul-H5-n5T"/>
-                                    <segue destination="gVl-bB-5wp" kind="show" identifier="showPhotoPage" id="3aF-Q6-X8x"/>
+                                    <segue destination="YGW-cq-tXW" kind="show" identifier="showPhotoPage" id="eum-TW-6Gp"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -57,7 +57,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG6-cz-zOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437" y="485"/>
+            <point key="canvasLocation" x="1524" y="484"/>
         </scene>
         <!--Zoomed Photo View Controller-->
         <scene sceneID="BWF-Mm-sV7">
@@ -114,7 +114,7 @@
         <!--Photo Comment View Controller-->
         <scene sceneID="ddb-aI-PST">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gVl-bB-5wp" customClass="PhotoCommentViewController" customModule="PhotoScroll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoCommentViewController" id="gVl-bB-5wp" customClass="PhotoCommentViewController" customModule="PhotoScroll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ww7-3u-OGA"/>
                         <viewControllerLayoutGuide type="bottom" id="93h-DH-H8s"/>
@@ -199,6 +199,14 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1435" y="1280"/>
+        </scene>
+        <!--Manage Page View Controller-->
+        <scene sceneID="j75-EM-z8C">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="8" navigationOrientation="horizontal" spineLocation="none" id="YGW-cq-tXW" customClass="ManagePageViewController" customModule="PhotoScroll" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddf-pm-o5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2262" y="1265"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uzF-pX-Zex">
