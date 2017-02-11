@@ -32,7 +32,7 @@ class ZoomedPhotoViewController: UIViewController {
   @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
   @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
   
-  var photoName: String!
+  var photoName: String! 
   
   override func viewDidLayoutSubviews() { //화면이 새로 구성될때마다 호출
     super.viewDidLayoutSubviews()
@@ -40,6 +40,7 @@ class ZoomedPhotoViewController: UIViewController {
   }
   
   override func viewDidLoad() {
+    super.viewDidLoad()
     imageView.image = UIImage(named: photoName)
   }
   

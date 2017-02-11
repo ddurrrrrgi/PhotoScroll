@@ -37,12 +37,22 @@ class PhotoCommentViewController: UIViewController {
             object: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ZoomedPhotoViewController {
+            viewController.photoName = photoName
+        }
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
     
     @IBAction func hideKeyboard(_ sender: AnyObject) {
         nameTextField.endEditing(true)
+    }
+    
+    @IBAction func clickImage(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "zoomImage", sender: nil)
     }
     
     func adjustInsetForKeyboardShow(show: Bool, notification: NSNotification) {
@@ -71,5 +81,4 @@ class PhotoCommentViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
 }
